@@ -38,3 +38,10 @@ while True:
         break
     else:
         print("NO CUMPLISTE CON LAS CONDICIONES DE LA CONTRASEÑA. VOLVE A INTENTAR")
+
+#Guarda Cuenta en archivo txt
+f = open("Cuentas.txt", "w+")
+f.write("Usuario: ", usuario, ", Contraseña: ", contrasena)
+
+
+
