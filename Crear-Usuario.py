@@ -40,8 +40,14 @@ while True:
         print("NO CUMPLISTE CON LAS CONDICIONES DE LA CONTRASEÑA. VOLVE A INTENTAR")
 
 #Guarda Cuenta en archivo txt
-f = open("Cuentas.txt", "w+")
-f.write("Usuario: ", usuario, ", Contraseña: ", contrasena)
+f = open("Cuentas.txt", "a")
+f.write(f"{usuario},{contrasena}\n")
 
+#INICIO DE SESIÓN
+print("\n\n-INICIO DE SESIÓN-")
+cont = 3
+while cont != 0:
+    usuario_ini = input("Usuario: ")
+    contrasena = input("Contraseña: ")
 
-
+    f.read("Cuentas.txt")
